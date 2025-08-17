@@ -1,0 +1,5 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from "./sections";
+import Nav from "./components/Nav";
+const App = () => (_jsxs("main", { className: "relative", children: [_jsx(Nav, {}), _jsx("section", { className: "xl:padding-l wide:padding-r padding-b", children: _jsx(Hero, {}) }), _jsx("section", { className: "padding", children: _jsx(PopularProducts, {}) }), _jsx("section", { className: "padding", children: _jsx(SuperQuality, {}) }), _jsx("section", { className: "padding-x py-10", children: _jsx(Services, {}) }), _jsx("section", { className: "padding", children: _jsx(SpecialOffer, {}) }), _jsx("section", { className: "padding bg-pale-blue", children: _jsx(CustomerReviews, {}) }), _jsx("section", { className: "padding-x sm:py-32 py-16 w-full", children: _jsx(Subscribe, {}) }), _jsx("section", { className: " bg-black padding-x padding-t pb-8", children: _jsx(Footer, {}) })] }));
+export default App;

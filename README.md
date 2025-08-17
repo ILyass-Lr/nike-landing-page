@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -67,3 +68,7 @@ export default tseslint.config([
   },
 ])
 ```
+=======
+# nike-landing-page
+Modern Nike landing page with multiple sections (Hero, Popular Products, Contact Us, Services, Customer Reviews ...) built with React + TS and Tailwind Css v4.1, it includes minimalistic sleek looking animations.
+>>>>>>> 313f9ad9e5209da8e2b7776e512c016b28344372

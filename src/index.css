@@ -1,0 +1,128 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100..700&display=swap");
+
+@import "tailwindcss";
+
+/* Tailwind v4+ CSS-first configuration */
+@theme {
+  /* Font families */
+  --font-palanquin: "Palanquin", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  /* Font sizes (value + line-height as separate vars) */
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+
+  --text-base: 16px;
+  --text-base--line-height: 19.5px;
+
+  --text-lg: 18px;
+  --text-lg--line-height: 21.94px;
+
+  --text-xl: 20px;
+  --text-xl--line-height: 24.38px;
+
+  --text-2xl: 24px;
+  --text-2xl--line-height: 29.26px;
+
+  --text-3xl: 28px;
+  --text-3xl--line-height: 50px;
+
+  --text-4xl: 48px;
+  --text-4xl--line-height: 58px;
+
+  --text-8xl: 96px;
+  --text-8xl--line-height: 106px;
+
+  /* Colors */
+  --color-primary: #ECEEFF;
+  --color-coral-red: #FF6452;
+  --color-slate-gray: #6D6D6D;
+  --color-pale-blue: #F5F6FF;
+  --color-white-400: rgba(255, 255, 255, 0.80);
+
+  /* Box shadows */
+  --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+  /* Background images */
+  --background-image-hero: url("assets/images/collection-background.svg");
+  --background-image-card: url("assets/images/thumbnail-background.svg");
+
+  /* Screens (breakpoints) */
+  --breakpoint-wide: 1440px;
+
+  /* Custom breakpoints*/
+  --breakpoint-middle: 70rem;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+		scale: 0.5;
+	}
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+main section:not(:first-of-type):not(:last-child) {
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 30%;
+}
+
+@utility max-container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+@utility input {
+  @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 
+         max-sm:p-5 outline-none sm:border-none border 
+         max-sm:border-slate-gray max-sm:rounded-full;
+}
+
+@utility padding {
+  @apply sm:px-16 px-8 sm:py-24 py-12;
+}
+
+@utility padding-x {
+  @apply sm:px-16 px-8;
+}
+
+@utility padding-y {
+  @apply sm:py-24 py-12;
+}
+
+@utility padding-l {
+  @apply sm:pl-16 pl-8;
+}
+
+@utility padding-r {
+  @apply sm:pr-16 pr-8;
+}
+
+@utility padding-t {
+  @apply sm:pt-24 pt-12;
+}
+
+@utility padding-b {
+  @apply sm:pb-24 pb-12;
+}
+
+@utility info-text {
+  @apply font-montserrat text-slate-gray text-lg leading-7;
+}

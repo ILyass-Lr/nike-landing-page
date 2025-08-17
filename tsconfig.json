@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Output */
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+
+    /* Type Checking */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* Paths (optional if you want aliases) */
+    "baseUrl": "./src",
+
+    /* For global type declarations */
+    "types": []
+  },
+  "include": [
+    "src",          // All your source files
+    "src/global.d.ts" // Global type declarations
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

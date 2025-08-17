@@ -1,74 +1,110 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# ✔ Nike Landing Page
+<div align="center">
+  <img src="https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-5.8.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-7.0.3-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4.1-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+</div>
+<div align="center">
+  <h3>✨ A modern, responsive Nike landing page built with cutting-edge web technologies ✨</h3>
+  <p>This project showcases the power of React, TypeScript, and Tailwind CSS in creating stunning, interactive user interfaces with smooth animations and mobile-first design principles.</p>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Features
+### 🎨 Custom Tailwind Configuration
 
-Currently, two official plugins are available:
+- <b>Configured Custom Utilities:</b> Custom utility classes for layout and text styles, ensuring consistent design patterns
+- <b>Pre-defined Design System:</b> Carefully curated colors, text sizes, fonts, and background images
+- <b>Base & Utility Layer Manipulation:</b> Enhanced Tailwind's base and utility layers for consistent styling across components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 💫 Advanced Tailwind Techniques
 
-## Expanding the ESLint configuration
+- <b>JavaScript-like Tasks with Tailwind:</b> Discover how Tailwind CSS achieves functionality that typically requires JavaScript code
+- <b>Pure CSS Interactions:</b> Hover effects, transitions, and state changes using only CSS classes
+- <b>Advanced Responsive Design:</b> Sophisticated breakpoint management and mobile-first approach
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🏗️ Component Architecture
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- <b>Complex Hero Section:</b> Visually stunning hero section with layered design elements and call-to-action buttons
+- <b>Popular Products Showcase:</b> Interactive product grid with smooth scale animations and hover effects
+- <b>About Us Section:</b> Unique design layout showcasing Nike's brand story and values
+- <b>Special Offers Section:</b> Eye-catching promotional content with dynamic styling
+- <b>Customer Testimonials:</b> Engaging testimonials section with smooth transitions
+- <b>Newsletter Integration:</b> Beautifully styled newsletter signup with Tailwind forms
+- <b>Comprehensive Footer:</b> Multi-column footer with social media links and navigation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 📱 Responsive Excellence
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- <b>Mobile-First Design:</b> Optimized for mobile devices with progressive enhancement
+- <b>Cross-Device Compatibility:</b> Seamless experience across smartphones, tablets, and desktops
+- <b>Tailwind Responsive Utilities:</b> Leveraging Tailwind's powerful responsive design capabilities
+
+### 🍔 Navigation Features
+
+- <b>Working Hamburger Menu:</b> Fully functional mobile navigation using only Tailwind CSS
+- <b>Smooth Transitions:</b> Elegant animations for menu open/close states
+- <b>Accessible Design:</b> Keyboard navigation and screen reader friendly
+
+### 🔧 Code Quality & Architecture
+
+- <b>TypeScript Integration:</b> Full type safety and enhanced developer experience
+- <b>Component Reusability:</b> Modular component architecture for maintainable code
+- <b>Performance Optimized:</b> Efficient bundle size with Vite's optimization
+- <b>Clean Code Structure:</b> Well-organized file structure and naming conventions
+
+## 🛠️ Setup & Installation
+
+Before running this project, make sure you have the following installed on your system:
+
+- <b>Node.js</b> (version 16.0 or higher)
+- <b>npm or yarn</b> package manager
+- <b>Git</b> for version control
+
+### Quick Start
+1. Clone the repository
+```bash
+git clone https://github.com/ILyas-Lr/nike-landing-page.git
+cd nike-landing-page
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
 ```
-=======
-# nike-landing-page
-Modern Nike landing page with multiple sections (Hero, Popular Products, Contact Us, Services, Customer Reviews ...) built with React + TS and Tailwind Css v4.1, it includes minimalistic sleek looking animations.
->>>>>>> 313f9ad9e5209da8e2b7776e512c016b28344372
+3. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
+4. Open your browser
+Navigate to http://localhost:5173 to view the application
+
+### Available Scripts
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>npm run dev</td>
+      <td>Starts the development server</td>
+    </tr>
+    <tr>
+      <td>npm run build</td>
+      <td>Creates a production build</td>
+    </tr>
+    <tr>
+      <td>npm run preview</td>
+      <td>Preview the production build locally</td>
+    </tr>
+    <tr>
+      <td>npm run lint</td>
+      <td>Run ESLint for code quality</td>
+    </tr>
+  </tbody>
+</table>

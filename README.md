@@ -52,6 +52,10 @@
 - <b>Performance Optimized:</b> Efficient bundle size with Vite's optimization
 - <b>Clean Code Structure:</b> Well-organized file structure and naming conventions
 
+## 🎥 Live Demo
+[View Here](https://ilyass-lr.github.io/nike-landing-page/)
+ 
+
 ## 🛠️ Setup & Installation
 
 Before running this project, make sure you have the following installed on your system:
